@@ -1,0 +1,5 @@
+Name	Description	Type
+ototoxic drugs	Any ototoxic drugs or molecules.	List
+otoprotective drugs	Any drugs or molecules mentioned as protective against ototoxicity or used to treat drug-induced hearing loss.	List
+effects	Clasify the ototoxicity as "Cochleo-toxicity", "Vestibulo-toxicity", "Dizzines", "not mentioned" or "Other".	String
+mechanism of ototoxicity	Note the described mechanism for the ototoxic compounds  mentioned (e.g., cochlear hair cell damage, vasoconstriction). Give a very short answer.	String
