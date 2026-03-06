@@ -4,7 +4,6 @@ from datetime import datetime
 from dotenv import load_dotenv, find_dotenv
 
 import sys
-sys.path.insert(0, f'/home/aylin/Scripts/Literature_Mining/Packages/ototoxic_database/')
 from pubmed_search import EntrezSearcher
 from GPT_search import GPTextract
 from pubchem_search import PubChemSearcher
@@ -20,7 +19,7 @@ gpt = GPTextract(api_key = os.environ['OPENAI_API_KEY'],
 
 # Output files
 timestamp = datetime.now().strftime("%d_%m_%Y_%H.%M")
-out_dir = "/home/aylin/ototoxic/new_database/"
+out_dir = "/out_dir/" # specify output directory
 print(f"Output will be saved to: {out_dir}")
 
 # --------------------------- PUBMED SEARCH ---------------------------
