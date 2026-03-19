@@ -97,6 +97,7 @@ To maintain a structured and predictable output, the pipeline needs a configurat
 The file used for the otoactive compound mining is in the [variables.txt](https://github.com/aylindmm/Ototoxic_DB/blob/main/variables.txt) file.
 
 ```python
+# GPT extraction
 results = gpt.fetch_gpt_data(df = articles,
                               prompt = prompt, 
                               variables = pd.read_csv(f"Ototoxic_DB/variables.txt", sep="\t")) 
