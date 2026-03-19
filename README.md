@@ -112,7 +112,6 @@ Finally, to homogenize compound nomenclature and retrieve the PubChem Compound I
 pubchem_results = PubChemSearcher().fetch_compound_info(df = results,  
 columns= ["ototoxic_drugs", "otoprotective_drugs"])
 
-
 # Merge the results with the original articles
 final_df = articles.merge(results.merge(pubchem_results, on="PMID", how="inner"), on="PMID", how="inner")
 
