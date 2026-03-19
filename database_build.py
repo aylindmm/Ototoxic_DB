@@ -65,14 +65,12 @@ print("Starting GPT extraction with {}.".format(gpt.model))
 
 results = gpt.fetch_gpt_data(df = articles,
                               prompt = prompt, 
-                              variables = pd.read_csv(f"/home/aylin/Scripts/Literature_Mining/Packages/ototoxic_database/variables.txt", sep="\t")) 
+                              variables = pd.read_csv(f"Ototoxic_DB/variables.txt", sep="\t")) 
 
 
 results.to_csv(f"{out_dir}gpt_extracted_ototoxic_data_{timestamp}.tsv", sep="\t", index=False)
 print("GPT extraction complete.")
 
-results = pd.read_csv(f"/home/aylin/ototoxic/new_database/gpt_extracted_ototoxic_data_09_01_2026_00.14.tsv", sep="\t")   
-articles = pd.read_csv(f"/home/aylin/ototoxic/new_database/ototoxic_articles_09_01_2026_00.14.tsv", sep="\t")
 # --------------------------- PUBCHEM SEARCH ---------------------------
  # Convert drug lists to pubchem IDs and fetch compound info
 
