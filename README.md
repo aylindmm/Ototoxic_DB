@@ -2,7 +2,7 @@ This repository contains the source code and data processing workflows used to g
 
 > **Mapping the Otoactive Landscape: An LLM-Aided Extraction of Compounds and Their Targets**  DOI: [Link to Article]
 
-The core code for the dataset generation is contained in [database_build.py].(https://github.com/aylindmm/Ototoxic_DB/blob/main/database_build.py). Here is an step by step explanation.
+The core code for the dataset generation is contained in [database_build.py](https://github.com/aylindmm/Ototoxic_DB/blob/main/database_build.py). Here is an step by step explanation.
 
 ### How to Use the Pipeline
 
